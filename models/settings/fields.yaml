@@ -1,0 +1,46 @@
+tabs:
+    fields:
+        type:
+            tab: linkonoid.scpincludecontent::lang.settings.grab.tab
+            label: linkonoid.scpincludecontent::lang.settings.grab.type
+            type: dropdown
+            options:
+                guzzle: 'Guzzle, PHP HTTP client'
+                simple: 'Simple Html Dom, HTML DOM parser'
+                curl: 'Curl, PHP module'
+            span: left           
+        timeout:
+            tab: linkonoid.scpincludecontent::lang.settings.grab.tab
+            label: linkonoid.scpincludecontent::lang.settings.grab.timeout
+            span: right
+        substitution:
+            tab: linkonoid.scpincludecontent::lang.settings.replacer.tab
+            label: linkonoid.scpincludecontent::lang.settings.replacer.substitution
+            span: full
+            prompt: linkonoid.scpincludecontent::lang.settings.replacer.substitution-add                         
+            type: repeater             
+            form:
+                fields:
+                    search:    
+                        tab: linkonoid.scpincludecontent::lang.settings.replacer.tab 
+                        label: linkonoid.scpincludecontent::lang.settings.replacer.substitution-search
+                        span: left
+                    replace:
+                        tab: linkonoid.scpincludecontent::lang.settings.replacer.tab 
+                        label: linkonoid.scpincludecontent::lang.settings.replacer.substitution-replace
+                        span: right
+        addcontent:
+            tab: linkonoid.scpincludecontent::lang.settings.replacer.tab
+            label: linkonoid.scpincludecontent::lang.settings.replacer.addcontent
+            span: full
+            prompt: linkonoid.scpincludecontent::lang.settings.replacer.addcontent-add              
+            type: repeater             
+            form:
+                fields:
+                    value:
+                        tab: linkonoid.scpincludecontent::lang.settings.replacer.tab 
+                        label: linkonoid.scpincludecontent::lang.settings.replacer.addcontent-value
+                        type: codeeditor
+                        size: huge
+                        language: html
+                        span: full
